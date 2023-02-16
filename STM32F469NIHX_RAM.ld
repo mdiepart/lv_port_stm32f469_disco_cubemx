@@ -48,6 +48,7 @@ MEMORY
   CCMRAM    (xrw)    : ORIGIN = 0x10000000,   LENGTH = 64K
   RAM    (xrw)    : ORIGIN = 0x20000000,   LENGTH = 320K
   FLASH    (rx)    : ORIGIN = 0x8000000,   LENGTH = 2048K
+  SDRAM    (rw)	   : ORIGIN = 0xC0000000,  LENGTH = 128M
 }
 
 /* Sections */
@@ -193,6 +194,21 @@ SECTIONS
     . = . + _Min_Stack_Size;
     . = ALIGN(8);
   } >RAM
+  
+  /* External SDRAM memory */
+  .sdram_bank1 (NOLOAD) :
+  {
+    _ssdram = .;       /* create a global symbol at ccmram start */
+    KEEP(*(.framebuffer))    /* Framebuffer must be placed at address 0xC0000000 */
+    				         /* so we place it before the rest of the data in sdram */
+    . = ALIGN(4);
+    
+    *(.sdram)
+    *(.sdram*)
+
+    . = ALIGN(4);
+    _esdram = .;       /* create a global symbol at ccmram end */
+  } >SDRAM
 
   /* Remove information from the compiler libraries */
   /DISCARD/ :
