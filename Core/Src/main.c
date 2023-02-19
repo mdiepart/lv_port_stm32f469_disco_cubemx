@@ -24,7 +24,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <lvgl.h>
-#include <lv_demos.h>
+#include "./demos/lv_demos.h"
 #include <screen_driver.h>
 
 /* USER CODE END Includes */
