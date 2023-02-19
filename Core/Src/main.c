@@ -26,6 +26,7 @@
 #include <lvgl.h>
 #include "./demos/lv_demos.h"
 #include <screen_driver.h>
+#include <touch_sensor_driver.h>
 
 /* USER CODE END Includes */
 
@@ -146,6 +147,7 @@ int main(void)
   lv_init();
 
   screen_driver_init();
+  touch_sensor_driver_init();
 
   lv_demo_benchmark();
   /* USER CODE END 2 */
