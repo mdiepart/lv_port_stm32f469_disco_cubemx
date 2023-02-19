@@ -33,32 +33,32 @@
 		<link>
 			<name>Drivers/BSP/Components/ft6x06.c</name>
 			<type>1</type>
-			<locationURI>copy_PARENT/Drivers/BSP/Components/ft6x06/ft6x06.c</locationURI>
+			<locationURI>PROJECT_LOC/Drivers/BSP/Components/ft6x06/ft6x06.c</locationURI>
 		</link>
 		<link>
 			<name>Drivers/BSP/Components/nt35510.c</name>
 			<type>1</type>
-			<locationURI>copy_PARENT/Drivers/BSP/Components/nt35510/nt35510.c</locationURI>
+			<locationURI>PROJECT_LOC/Drivers/BSP/Components/nt35510/nt35510.c</locationURI>
 		</link>
 		<link>
 			<name>Drivers/BSP/Components/otm8009a.c</name>
 			<type>1</type>
-			<locationURI>copy_PARENT/Drivers/BSP/Components/otm8009a/otm8009a.c</locationURI>
+			<locationURI>PROJECT_LOC/Drivers/BSP/Components/otm8009a/otm8009a.c</locationURI>
 		</link>
 		<link>
 			<name>Drivers/BSP/STM32469I-Discovery/stm32469i_discovery.c</name>
 			<type>1</type>
-			<locationURI>copy_PARENT/Drivers/BSP/STM32469I-Discovery/stm32469i_discovery.c</locationURI>
+			<locationURI>PROJECT_LOC/Drivers/BSP/STM32469I-Discovery/stm32469i_discovery.c</locationURI>
 		</link>
 		<link>
 			<name>Drivers/BSP/STM32469I-Discovery/stm32469i_discovery_lcd.c</name>
 			<type>1</type>
-			<locationURI>copy_PARENT/Drivers/BSP/STM32469I-Discovery/stm32469i_discovery_lcd.c</locationURI>
+			<locationURI>PROJECT_LOC/Drivers/BSP/STM32469I-Discovery/stm32469i_discovery_lcd.c</locationURI>
 		</link>
 		<link>
 			<name>Drivers/BSP/STM32469I-Discovery/stm32469i_discovery_ts.c</name>
 			<type>1</type>
-			<locationURI>copy_PARENT/Drivers/BSP/STM32469I-Discovery/stm32469i_discovery_ts.c</locationURI>
+			<locationURI>PROJECT_LOC/Drivers/BSP/STM32469I-Discovery/stm32469i_discovery_ts.c</locationURI>
 		</link>
 	</linkedResources>
 	<filteredResources>
@@ -79,10 +79,4 @@
 			</matcher>
 		</filter>
 	</filteredResources>
-	<variableList>
-		<variable>
-			<name>copy_PARENT</name>
-			<value>$%7BPARENT-3-PROJECT_LOC%7D/STM32CubeIDE/workspace_1.11.2/LCD_Paint</value>
-		</variable>
-	</variableList>
 </projectDescription>
